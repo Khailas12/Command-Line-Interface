@@ -12,6 +12,7 @@ parser.add_argument('-b',
     const=42
 )   # 42 is just a random integer provided
 
+
 parser.add_argument('-c', action='store_true')
 # The store_true action stores a True Boolean when the argument is passed and store a False Boolean elsewhere. If you need the opposite behavior, just use the store_false action:
 
