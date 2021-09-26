@@ -15,13 +15,13 @@ class verboseStore(argparse.Action):
         # In other words, super() allows you to build classes that easily extend the functionality of previously built classes without implementing their functionality again.
         
         
-    # The __call__ method enables Python programmers to write classes 
+    # The __call__ method enables to write classes 
     # where the instances behave like functions and can be called like a function.
     def __call__(self, parser, namespace, values, option_strings=None):
         print(
             'setting the value %r for the %r option!' % (values, option_strings)
         )
-        setattr(namespace, self.dest, values)
+        setattr(namespace, self.dest, values)   #  setattr -> to assign the object attribute its value
         
 
 parser = argparse.ArgumentParser()
