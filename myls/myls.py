@@ -29,7 +29,6 @@ parser.add_argument(
 )
 
 
-
 # executing the parse_args() method
 args = parser.parse_args()   # Executing the parse.args() method
 
