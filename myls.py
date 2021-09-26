@@ -4,12 +4,12 @@ import os
 
 
 # creating parser
-my_parser = argparse.ArgumentParser(
+parser = argparse.ArgumentParser(
     prog='myls',
     usage='%(prog)s [options] path',
     description='List the content of a folder',
     epilog='Have a nice day! :)',
-    prefix_chars='/',
+    prefix_chars='=',
     add_help=True
     )    
 # prog=: name of the program 
@@ -21,15 +21,17 @@ my_parser = argparse.ArgumentParser(
 
 
 # adding arguments
-my_parser.add_argument(
+parser.add_argument(
     'Path',
     metavar='path',
     type=str,
     help='the path of list'
 )
 
+
+
 # executing the parse_args() method
-args = my_parser.parse_args()   # Executing the parse.args() method
+args = parser.parse_args()   # Executing the parse.args() method
 
 input_path = args.Path
 
@@ -38,3 +40,7 @@ if not os.path.isdir(input_path):
     sys.exit()
     
 print('\n'.join(os.listdir(input_path)))
+
+
+# I/O
+# python myls.py =h
