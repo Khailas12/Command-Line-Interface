@@ -2,7 +2,6 @@ import argparse
 
 
 # The nargs (No. of arguments) accepts a couple of extra special parameters. 
-# If you want the argument to accept all of the parameters, you can use * which will return all parameters if present, 
 # or empty list if none. Positional arguments are determined by the position specified.
 
 class verboseStore(argparse.Action):
@@ -34,3 +33,9 @@ parser.add_argument(
 
 args = parser.parse_args()
 print(args)
+
+
+# I/O -> python creating_action.py -i 32
+# O/P
+# setting the value 32 for the '-i' option!
+# Namespace(input=32)
