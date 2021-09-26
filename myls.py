@@ -18,7 +18,7 @@ parser = argparse.ArgumentParser(
 # epilog=: for the text shown after the help text
 # By default, the standard prefix char is the dash (-). eg: -help
 # add_help=False -> to disable the help feature and -h wouldn't be accepted
-
+# action -> This specifies to store the value to the Namepsace object when executed. basically it's characteristics 
 
 # adding arguments
 parser.add_argument(

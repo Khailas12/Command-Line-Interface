@@ -9,6 +9,7 @@ parser.add_argument(
     type=int,
     required=True,
 )
+# action=store -> stores the input value to the Namepsace Obj. This is default action
 
 parser.add_argument(
     '--id',
