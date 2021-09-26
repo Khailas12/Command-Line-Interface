@@ -9,13 +9,16 @@ my_parser = argparse.ArgumentParser(
     usage='%(prog)s [options] path',
     description='List the content of a folder',
     epilog='Have a nice day! :)',
-    prefix_chars='/'
+    prefix_chars='/',
+    add_help=True
     )    
 # prog=: name of the program 
 # usage=: shows the help info from default
 # description=: for the text that is shown before the help text
 # epilog=: for the text shown after the help text
 # By default, the standard prefix char is the dash (-). eg: -help
+# add_help=False -> to disable the help feature and -h wouldn't be accepted
+
 
 # adding arguments
 my_parser.add_argument(
